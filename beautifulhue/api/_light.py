@@ -1,4 +1,4 @@
-from beautifulhue.lib.http import Request
+from beautifulhue.libs.http import Request
 
 class Light:
 
@@ -11,6 +11,9 @@ class Light:
         """
         @summary: Get all lights, get new lights, or get a specific light as\
                   determined by the resource object.
+
+        @TODO: Fix resource variable scope issue that manifests when making\
+               multiple light.get(resource) calls.
         """
         
         request = Request()
